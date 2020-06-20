@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Range slider</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    >
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <section class="slider">
+      <label class="label" for="min-input">Min:</label>
+      <input
+        type="number"
+        name="min-input"
+        id="min-input"
+      >
+      <br>
+      <label class="label" for="max-input">Max:</label>
+      <input
+        type="number"
+        name="min-input"
+        id="max-input"
+      >
+
+      <div class="slider__wrapper">
+        <div class="slider__ruler">
+          <div class="slider__fill"></div>
+          <div class="slider__thumb"></div>
+          <div class="slider__tooltip">100</div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
