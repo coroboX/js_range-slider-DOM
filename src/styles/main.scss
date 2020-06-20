@@ -1,0 +1,22 @@
+@import "utils";
+@import "fonts";
+@import "typography";
+
+html,
+body,
+section,
+input,
+label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 18px;
+}
+
+body {
+  background: $c-gray;
+}
