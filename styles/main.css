@@ -18,12 +18,21 @@ label {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-html {
+html,
+input {
   font-family: "Ubuntu Mono", monospace;
   font-size: 18px; }
 
 body {
   background: #eee; }
+
+input {
+  margin-bottom: 20px;
+  padding-left: 3px; }
+
+.label {
+  display: inline-block;
+  width: 40px; }
 
 .slider {
   padding: 20px; }
@@ -50,40 +59,32 @@ body {
     background-color: #3a3a58;
     border: 1px solid #00ffa1;
     border-radius: 5px; }
+  .slider__ruler:hover {
+    cursor: pointer; }
   .slider__fill {
-    width: 20%;
+    width: 0%;
     height: 20px;
-    -webkit-transition: width ease 0.2s;
-    transition: width ease 0.2s;
+    position: absolute;
     background-color: cyan; }
   .slider__thumb {
-    width: 35px;
-    height: 40px;
+    width: 25px;
+    height: 30px;
     position: absolute;
-    left: 20%;
-    -webkit-transition: left ease 0.2s;
-    transition: left ease 0.2s;
+    left: 0%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    background-color: #347a8b;
+    background-color: #1aabcf;
     border: 1px solid #00ffa1;
-    border-radius: 5px; }
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black; }
   .slider__tooltip {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: -32px;
-    -webkit-transition: left ease 0.1s;
-    transition: left ease 0.1s;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-
-input {
-  margin-bottom: 20px;
-  padding-left: 3px; }
-
-.label {
-  display: inline-block;
-  width: 40px; }
+            transform: translateX(-50%);
+    top: -32px;
+    visibility: hidden; }
 
 /*# sourceMappingURL=main.css.map */
