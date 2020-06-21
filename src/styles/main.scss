@@ -65,7 +65,6 @@ input {
     position: absolute;
 
     background-color: cyan;
-    // transition: width ease 0.1s;
   }
 
   &__thumb {
@@ -79,7 +78,6 @@ input {
     border: 1px solid #00ffa1;
     border-radius: 5px;
     box-shadow: 0 0 10px black;
-    // transition: left ease 0.1s;
   }
   
   &__tooltip {
@@ -90,6 +88,6 @@ input {
     top: -32px;
 
     visibility: hidden;
-    // transition: left ease 0.1s;
+    transition: left ease 0.05s;
   }
 }
