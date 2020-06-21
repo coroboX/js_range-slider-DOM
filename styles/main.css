@@ -85,6 +85,8 @@ input {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     top: -32px;
-    visibility: hidden; }
+    visibility: hidden;
+    -webkit-transition: left ease 0.05s;
+    transition: left ease 0.05s; }
 
 /*# sourceMappingURL=main.css.map */
